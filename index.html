@@ -9,41 +9,60 @@
     h1, h2 { color: #164e3c; }
     h1 { border-bottom: 2px solid #d8e8df; padding-bottom: 12px; }
     a { color: #176b50; }
+    .notice { background: #f2f8f5; border-left: 4px solid #176b50; padding: 12px 16px; }
     footer { margin-top: 40px; border-top: 1px solid #ddd; padding-top: 16px; color: #666; }
   </style>
 </head>
 <body>
   <h1>81 Mobile Gizlilik Politikası</h1>
-  <p><strong>Son güncelleme:</strong> 26 Eylül 2026<br>
-  <strong>Geliştirici:</strong> Fatih Çavuş<br>
+  <p><strong>Son güncelleme:</strong> 13 Ekim 2026<br>
+  <strong>Geliştirici ve veri sorumlusu:</strong> Fatih Çavuş<br>
   <strong>İletişim:</strong> <a href="mailto:facavus@gmail.com">facavus@gmail.com</a></p>
 
+  <p class="notice"><strong>Mevcut yayın durumu:</strong> Google Play'de yayımlanan 1.0.8+10 üretim sürümünde reklam gösterilmez. AdMob üretim reklamları yazılım anahtarıyla kapalıdır (<code>productionAdsEnabled=false</code>); reklam isteği yapılmaz ve 75 CHIP ödüllü reklam seçeneği kullanıma sunulmaz. Aşağıdaki AdMob açıklamaları, geliştirme testlerini ve üretim reklamlarının ileride etkinleştirilebileceği durumu ayrıca açıklar.</p>
+
   <h2>1. Uygulama hakkında</h2>
-  <p>81 Mobile, bilgisayar rakiplerine karşı oynanabilen çevrimdışı bir mobil kart oyunudur.</p>
+  <p>81 Mobile, bilgisayar rakiplerine karşı çevrimdışı oynanabilen bir mobil kart oyunudur. Mevcut sürüm hesap oluşturmayı gerektirmez; ad, e-posta adresi veya telefon numarası gibi doğrudan kimlik bilgilerini oyun içinde istemez.</p>
 
-  <h2>2. Kişisel veriler</h2>
-  <p>Uygulamanın mevcut sürümü kullanıcı hesabı gerektirmez. Geliştirici, uygulama aracılığıyla kullanıcıların ad, e-posta adresi, telefon numarası veya konum bilgilerini toplamaz.</p>
+  <h2>2. Cihazda saklanan oyun verileri</h2>
+  <p>Oyun ilerlemesi, puanlar, sanal CHIP bakiyesi, cüzdan işlem geçmişi ve yarım kalan maçlara ilişkin bilgiler cihazın uygulamaya özel depolama alanında tutulabilir. Bu oyun verileri geliştiricinin sunucusuna gönderilmez; bulut yedeği, hesap eşitleme veya başka cihaza aktarma özelliği yoktur.</p>
 
-  <h2>3. Oyun verileri</h2>
-  <p>Oyun ilerlemesi, puanlar ve sanal bakiye gibi bilgiler cihazda saklanabilir. Mevcut sürümde bu bilgiler geliştiricinin sunucularına gönderilmez.</p>
+  <h2>3. Firebase Analytics</h2>
+  <p>1.0.8+10 üretim sürümü, oyunun kullanımı ve performansı hakkında toplu istatistikler elde etmek için Google Firebase Analytics kullanır. Oyun modu ve masa seviyesi seçimi, oyunun başlatılması, tamamlanması veya terk edilmesi, seri/çift açılması ve oyuncunun kazanması ya da kaybetmesi gibi olaylar kaydedilir. Bu olaylara kullanıcı adı, e-posta, kart içeriği veya serbest metin eklenmez.</p>
+  <p>Firebase Analytics ayrıca uygulama örneği kimliği, uygulama sürümü, cihaz modeli, işletim sistemi, dil, yaklaşık coğrafi bölge ve oturum/etkileşim bilgileri gibi teknik verileri otomatik olarak işleyebilir. Bu veriler kullanım eğilimlerini anlamak, hataları araştırmak ve uygulamayı iyileştirmek amacıyla Google tarafından geliştirici adına işlenir.</p>
 
-  <h2>4. Reklam ve üçüncü taraf hizmetleri</h2>
-  <p>Uygulamanın mevcut yayın sürümünde reklam gösterilmez ve reklam amaçlı kullanıcı takibi yapılmaz.</p>
+  <h2>4. Firebase Crashlytics</h2>
+  <p>1.0.8+10 üretim sürümü, çökmeleri ve ciddi uygulama hatalarını tespit etmek için Firebase Crashlytics kullanır. Bir hata oluştuğunda yığın izleri, hatayla ilgili uygulama durumu, cihaz ve işletim sistemi bilgileri, uygulama sürümü, Crashlytics kurulum kimliği ve hatadan önceki Analytics olaylarından oluşabilen tanılama bilgileri Google'a gönderilebilir. Bu bilgiler uygulama kararlılığını ölçmek, sorunu yeniden üretmek ve düzeltmek için kullanılır. Geliştirici Crashlytics'e bilerek ad, e-posta veya telefon numarası eklemez.</p>
 
-  <h2>5. Sanal bakiye</h2>
-  <p>Oyundaki bakiyeler tamamen sanaldır. Gerçek para yatırma, gerçek para çekme veya gerçek para ödülü bulunmaz.</p>
+  <h2>5. AdMob ve ödüllü reklamlar</h2>
+  <p><strong>Şu anda:</strong> Üretim AdMob App ID'si (<code>ca-app-pub-6188318754122528~7027157860</code>) ve ödüllü reklam birimi (<code>ca-app-pub-6188318754122528/6920355811</code>) yapılandırmada kayıtlı olsa da 1.0.8+10 üretim sürümünde reklam çalışma zamanı kapalıdır. Google Mobile Ads başlatılmaz, reklam yüklenmez veya gösterilmez. Debug derlemelerinde reklam testi yalnız geliştirici tarafından özellikle etkinleştirilirse Google'ın resmi test reklam kimlikleriyle yapılır; gerçek reklam kimlikleri testte kullanılmaz.</p>
+  <p><strong>Gelecekte etkinleştirilirse:</strong> Kullanıcı kendi seçimiyle ödüllü reklam izleyebilecek ve reklam başarıyla tamamlandığında yalnızca oyun içinde kullanılabilen 75 CHIP alabilecektir. Reklamı reddetmek veya yarıda kapatmak oyunun temel çevrimdışı işlevlerini engellemeyecek; yalnız ilgili isteğe bağlı ödül verilmeyecektir.</p>
+  <p>Bir reklam istendiğinde Google Mobile Ads; IP adresi (yaklaşık konum çıkarmak için kullanılabilir), reklam ve uygulama etkileşimleri, tanılama bilgileri ile cihaz/hesap tanımlayıcılarını reklam sunumu, ölçüm, analiz ve sahtekârlığı önleme amaçlarıyla toplayabilir veya paylaşabilir. İşlenecek kesin veri, cihaz ayarlarına, bölgeye, kullanıcının rıza tercihlerine ve Google'ın o tarihteki SDK davranışına bağlıdır.</p>
 
-  <h2>6. Veri silme</h2>
-  <p>Kullanıcı, cihazının uygulama ayarlarından uygulama verilerini temizleyebilir veya uygulamayı kaldırabilir. Bu işlemler kayıtlı oyun ilerlemesinin ve sanal bakiyenin kaybolmasına neden olabilir.</p>
+  <h2>6. Reklam rızası, ret ve tercih değiştirme</h2>
+  <p>Üretim reklamları etkinleştirilmeden önce, hukuken gerekli bölgelerde Google User Messaging Platform (UMP) üzerinden reklam veri işleme seçenekleri gösterilecektir. Gerekli rıza verilmezse reklam isteği yapılmayacaktır. Kullanıcı reklam rızasını reddedebilir; bu ret temel oyunu engellemez.</p>
+  <p>Reklamların etkin olduğu bir sürüm yayımlanırsa uygulamada, UMP'nin gerekli gördüğü durumlarda, önceki seçimi yeniden açıp değiştirmeye yarayan görünür bir “Gizlilik seçenekleri” girişi sağlanacaktır. Android ayarlarından reklam kimliği de sıfırlanabilir veya silinebilir. Mevcut 1.0.8+10 üretim sürümünde reklam bulunmadığı için aktif bir reklam rızası ekranı ya da reklam tercihi düğmesi yoktur.</p>
+  <p>Firebase Analytics ve Crashlytics 1.0.8+10 üretim sürümünde otomatik olarak çalışır; bu sürümde bunlar için uygulama içi açma/kapatma düğmesi bulunmaz. Veri işlemeye itiraz veya gizlilik talebi için aşağıdaki iletişim adresi kullanılabilir.</p>
 
-  <h2>7. Çocukların gizliliği</h2>
-  <p>Uygulama, çocuklardan bilerek kişisel bilgi talep etmez.</p>
+  <h2>7. Üçüncü taraflar, saklama ve aktarım</h2>
+  <p>Firebase Analytics, Firebase Crashlytics ve gelecekte etkinleştirilmesi halinde AdMob hizmetleri Google LLC tarafından sağlanır. Veriler Google'ın altyapısında geliştirici adına ve Google'ın geçerli hizmet şartları, veri işleme şartları, saklama ayarları ve gizlilik politikası uyarınca işlenebilir; hizmetin sunulması için farklı ülkelerdeki sistemlere aktarılabilir. Aktarım sırasında Google hizmetlerinin sağladığı şifreleme kullanılır.</p>
+  <p>Google'ın gizlilik uygulamaları hakkında ayrıntı için <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>, <a href="https://firebase.google.com/support/privacy">Firebase Gizlilik ve Güvenlik</a> ve <a href="https://policies.google.com/technologies/partner-sites">Google'ın iş ortağı uygulamalarındaki veri kullanımı</a> sayfalarına bakılabilir.</p>
 
-  <h2>8. Değişiklikler</h2>
-  <p>Uygulamanın özellikleri veya veri işleme uygulamaları değişirse bu politika güncellenebilir.</p>
+  <h2>8. Veri silme ve talepler</h2>
+  <p>Cihazdaki oyun verileri, Android'de Ayarlar &gt; Uygulamalar &gt; 81 Mobile &gt; Depolama &gt; Verileri temizle yolu kullanılarak veya uygulama kaldırılarak silinebilir. Bu işlem yerel ilerleme ve sanal bakiyeyi kalıcı olarak kaybettirebilir.</p>
+  <p>Uygulamada hesap bulunmadığı ve Firebase kayıtları ad/e-posta ile eşleştirilmediği için geliştirici belirli bir kullanıcıya ait anonim veya kurulum düzeyindeki kaydı her zaman tespit edemeyebilir. Erişim, itiraz veya mümkün olduğu ölçüde silme talebi için <a href="mailto:facavus@gmail.com">facavus@gmail.com</a> adresine yazılabilir. Talebin araştırılabilmesi için uygulama sürümü, yaklaşık olay tarihi ve cihaz modeli istenebilir; gereksiz kimlik bilgisi gönderilmemelidir.</p>
 
-  <h2>9. İletişim</h2>
-  <p>Sorularınız için <a href="mailto:facavus@gmail.com">facavus@gmail.com</a> adresine ulaşabilirsiniz.</p>
+  <h2>9. Sanal bakiye</h2>
+  <p>CHIP bakiyesi tamamen sanaldır. Gerçek para yatırma, gerçek para çekme veya gerçek para ödülü bulunmaz. Gelecekte sunulabilecek ödüllü reklamın 75 CHIP ödülü de yalnız oyun içi sanal değerdir.</p>
+
+  <h2>10. Çocukların gizliliği</h2>
+  <p>Uygulama çocuklardan bilerek ad, iletişim bilgisi veya başka doğrudan kişisel bilgi talep etmez. Reklamların gelecekte etkinleştirilmesinden önce hedef kitle ve çocuklara yönelik reklam gereklilikleri ayrıca değerlendirilecek; gerekli korumalar tamamlanmadan üretim reklamları açılmayacaktır.</p>
+
+  <h2>11. Değişiklikler</h2>
+  <p>Uygulamanın özellikleri, kullanılan hizmetler veya veri işleme uygulamaları değişirse bu politika güncellenir. Üretim reklamları ancak ilgili rıza, tercih değiştirme ve mağaza beyanları tamamlandıktan ve politika gerçek davranışı yansıtacak şekilde yeniden güncellendikten sonra etkinleştirilebilir.</p>
+
+  <h2>12. İletişim</h2>
+  <p>Gizlilikle ilgili soru ve talepler için geliştirici ve veri sorumlusu Fatih Çavuş'a <a href="mailto:facavus@gmail.com">facavus@gmail.com</a> adresinden ulaşabilirsiniz.</p>
 
   <footer>© 2026 81 Mobile</footer>
 </body>
